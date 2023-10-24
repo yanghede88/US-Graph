@@ -1,0 +1,172 @@
+
+<html>  
+<head>  
+<script type="text/javascript" src="app.js">
+    </script>  
+<link rel="stylesheet" href="styles.css">
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+
+</head>
+<body onload=assignment9()> 
+
+<div>
+<h2 class="section">Assignment 9</h2>
+
+<br>
+<div>
+<h3>Plot1: Scatter</h3>
+
+<div id="plot1">
+
+    </div>
+    <h4>Plot:</h4>
+    <div id="plot_1" class="center_plot">
+     <div id="explaination" > This is a scatter plot. The x axis is the type of movie, the y axis is the released year. I applied d3.zoom and tooltip on this scatter plot, which allows audiences to zoom in and see the name of the movie </div>
+     <br>
+     <div id="explaination" >  i: I chose one single color to represents each movie because it is categorical.  
+        ii: Channels: Horizontal position, Vertical position.  Marks: points
+     </div>
+     <h4>Storytelling:</h4>
+     <div id="explaination" >  This scatter plot demonstrates the type of movies/shows that exist in the dataset and which
+        year it is produced.  <br />It is easy to see which category of movies/ shows are being produced most across all the years. <br />
+        The empty space in the scatter plot indicates that some types of shows/movies were not reproduced in certain years. 
+     </div>
+    </div><br>
+</div>    
+
+    
+<div>
+<h3>Plot 2: Bar Chart</h3>
+ <div id="plot_q2" class="center_plot">
+    <div id="explaination" > This is a bar Chart. The x axis is the type of movie, the y axis is the amount of each type. I applied interactivities of bottons and animetion on this bar chart. </div>
+    <br>
+    <div id="explaination" >  i: I chose one single color to represents each type of movie because it is categorical.  <br />
+       ii: Channels: Horizontal position, Verical position.  Marks: rectangles <br /> <br />
+       This bar chart shows the amount of each category of movies and shows being produced. <br />
+       The higher bars represent a larger amount of production of certain types of movies/shows and vice versa.<br />
+        It helps the audience understand which type of movies/shows are more popular. 
+    </div>
+    <button type="button", id="sort_button">Sort me!</button>
+    
+</div>
+      
+<div id="q2">
+    </div>
+    <h4>Plot:</h4>
+
+    <div id="plot_2" class="center_plot">
+    </div>
+</div>   
+
+<div>
+    <h3>Plot 3: Stacked Bar Chart</h3>
+    <div id="explaination" > This is a stacked bar Chart. The x axis is the countries, the y axis is the amount of movie/shows.  <br />
+    <br>
+     i: I chose one single color to represents each type of movie because it is categorical.   <br />
+       ii: Channels: Horizontal position, Verical position, Color, length of each segment.  Marks: lines  <br /> <br />
+       This is a stacked bar chart. The different colors represent the two kinds of media(tv shows and movies).   <br />
+       The stacked bar chart shows the amount of two types of media across countries. I made some changes based on my original proposal. <br /> 
+       I was planning on setting the x axis to be directors. However, it seems like most of the directors only have one work, thus the stacked bar chart seems meaningless. <br />
+        I adjusted the x axis to be countries, which can shows a more obvious relationship between country and amount of each type of media. <br />
+    </div>
+    <div id="plot_q3" class="center_plot"></div>
+    <div id="q">
+    </div>
+    <h4>Plot:</h4>
+    <div id="plot_3" class="center_plot">
+    </div>
+</div>  
+
+
+<div>
+    <h3>Plot 4: GeoMap</h3>
+    <div id="explaination" > This is a Geomap. It shows ammount of production from each countries.  </div>
+    <br>
+    <div id="explaination" >  i:  The color scheme is d3.scaleSequential(d3.interpolatePurples) because the sata is sequential.<br />
+       ii: Channels: color,Location  Marks: color-coded areas<br /><br />
+
+This is a geomap. The different colors indicate the total number of shows and movies being produced in each country.<br />
+ It provides a strong visual representation to the audiences. The darker the color, the larger the amount is. 
+
+    </div>
+    <div id="plot_q4" class="center_plot"></div>
+    <div id="q">
+    </div>
+    <h4>Plot:</h4>
+    <div id="plot_4" class="center_plot">
+    </div>
+</div>  
+
+
+<div>
+    <h3>Plot 5: Box Plot</h3>
+    <div id="plot_q4" class="center_plot"></div>
+    <div id="explaination" > This is a Boxplot. It shows how released year of movie/show distributed.  </div>
+    <br>
+    <div id="explaination" >  i:  The color scheme is single color because it is categorical. <br />
+       ii: Channels: position, length, width, color  Marks: lines <br /><br />
+       This is a box plot of released years of movies and tv shows. I made some changes based on the original proposal: duration of shows and movies. <br />
+       When i was doing the data cleaning i realized that there are multiple measure units for the duration. Some are in seasons, some are in episodes.<br />
+        It is hard to standardize the units, so I started to look for the relationship between release year and kinds of media. <br />
+        This box plot gives the audience a general idea of the distribution of release years. <br />
+    </div>
+    <div id="q">
+    </div>
+    <h4>Plot:</h4>
+    <div id="plot_5" class="center_plot">
+    </div>
+</div> 
+</div>  
+ 
+
+  
+<!-- <div>
+    <h3>Question 2:</h3>
+        <div id="radio_q2" class="center_plot">
+            <input type="radio" id="q2_MCD" name="region" value="McDonald's" checked="checked">
+            <label for="McDonald's">McDonald's</label>
+            <input type="radio" id="q3_BK" name="region" value="Burger King">
+            <label for="Japan">Burger King</label>
+            <input type="radio" id="q3_W" name="region" value="Wendy's">
+            <label for="Wendy's">Wendy's</label>
+    </div>
+            
+    <div id="q2">
+    
+        </div>
+        <h4>Plot:</h4>
+        <div id="q2_plot" class="center_plot">
+        </div>
+    </div>  
+
+
+
+
+    <div>
+        <h3>Question 2:</h3>
+            <div id="radio_q2" class="center_plot">
+                <input type="radio" id="q2_MCD" name="region" value="McDonald's" checked="checked">
+                <label for="McDonald's">McDonald's</label>
+                <input type="radio" id="q3_BK" name="region" value="Burger King">
+                <label for="Japan">Burger King</label>
+                <input type="radio" id="q3_W" name="region" value="Wendy's">
+                <label for="Wendy's">Wendy's</label>
+        </div>
+                
+        <div id="q2">
+        
+            </div>
+            <h4>Plot:</h4>
+            <div id="q2_plot" class="center_plot">
+            </div>
+        </div>  -->
+
+  
+   
+
+
+    
+   
+</body>  
+</html>  

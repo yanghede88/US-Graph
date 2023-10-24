@@ -1,0 +1,32 @@
+/*You can add styles to format your tooltip here*/
+.center_plot {
+    margin: auto;
+    text-align: center;
+}
+#explaination {
+    margin: auto;
+    text-align: left;
+    display: flex;
+    font-size: 20px;
+  
+}
+
+.section {
+    text-align: center;
+    top: -5px;
+    left: 105%;
+}
+.tooltip {
+    position: relative;
+    padding: 15px 10px;
+    border-radius: 4px;
+    background: white
+   
+  }
+.tooltip1 {
+    position: relative;
+    padding: 15px 10px;
+    border-radius: 4px;
+    background: pink
+   
+  }
